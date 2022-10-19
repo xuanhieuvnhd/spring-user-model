@@ -31,7 +31,7 @@ public class UserDAO {
         u3.setAge(16);
         u3.setName("hoanghieu");
         u3.setAccount("hoanghieu");
-        u2.setEmail("hoanghieu@gmail.com");
+        u3.setEmail("hoanghieu@gmail.com");
         u3.setPassword("761321");
         users.add(u3);
     }
