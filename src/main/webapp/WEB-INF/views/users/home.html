@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<form method="post" th:object="${login}">
+    <fieldset>
+        <legend><h3>Login</h3></legend>
+        <div class="input-info">
+            <lable><h5>Account</h5></lable>
+            <input type="text" th:field="*{account}">
+        </div>
+        <div class="input-info">
+            <lable><h5>Password</h5></lable>
+            <input type="password" th:field="*{password}">
+        </div>
+        <button>Login</button>
+    </fieldset>
+</form>
+</body>
+</html>

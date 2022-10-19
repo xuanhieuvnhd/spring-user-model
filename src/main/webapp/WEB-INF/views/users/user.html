@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<br>
+<field disabled>
+  <legend><h3>Account Details</h3></legend>
+  <table border="1" cellpadding="1">
+    <tr>
+      <th>Account: </th>
+      <th>Name: </th>
+      <th>Email: </th>
+      <th>Age: </th>
+    </tr>
+    <tr>
+      <td th:text="${user.account}"> </td>
+      <td th:text="${user.name}"> </td>
+      <td th:text="${user.email}"> </td>
+      <td th:text="${user.age}"> </td>
+    </tr>
+  </table>
+</field>
+</body>
+</html>
